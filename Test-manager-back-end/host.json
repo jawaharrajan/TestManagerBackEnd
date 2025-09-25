@@ -1,0 +1,27 @@
+{
+
+  "version": "2.0",
+
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": { "isEnabled": false },
+      "enableLiveMetricsFilters": false,
+      "enableLiveMetrics": false,
+      "enableDependencyTracking": true
+    },
+    "logLevel": {
+      "Default": "Debug",
+      "System.Net.Http.HttpClient": "Debug",
+      "Host.Results": "Information",
+      "Function": "Information"
+    }
+  },
+  "extensions": {
+    "eventHubs": {
+      "batchCheckpointFrequency": 1,
+      "maxEventBatchSize": 100,
+      "maxWaitTime": "00:00:30",
+      "prefetchCount": 300
+    }
+  }
+}
